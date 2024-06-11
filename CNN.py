@@ -39,7 +39,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 model.summary()
 
 
-model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=10, batch_size=200)
+model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=20, batch_size=200)
 test_loss, test_acc = model.evaluate(x_test, y_test)
 print(f'Test accuracy: {test_acc}')
 # Example prediction
